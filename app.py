@@ -1,6 +1,15 @@
 # importing CSV module tp be used for reading/parsing/writing data from .csv files
 import csv
 
+class Portfolio:
+    def __init__(self, portfolio_name, funds*):
+        self.portfolio = portfolio_name
+        self.funds = funds
+        self.funds_list = []
+
+class Fund:
+    pass
+
 # open the file for reading
 with open("Resources/COWZ-holdings.csv", "r") as fund_csv:
     csv_reader = csv.reader(fund_csv)
