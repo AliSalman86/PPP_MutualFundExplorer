@@ -2,7 +2,7 @@
 import csv
 
 class Portfolio:
-    def __init__(self, portfolio_name, funds*):
+    def __init__(self, portfolio_name, *funds):
         self.portfolio = portfolio_name
         self.funds = funds
         self.funds_list = []
